@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Xavier Brito - Desenvolvedor Backend Python especializado em Flask, FastAPI, APIs REST, Docker, AWS, LangChain e automação com IA">
+    <meta name="keywords" content="Backend Python Developer, APIs REST, Flask, FastAPI, Docker, AWS, LangChain, RAG, PostgreSQL, SQLAlchemy, Desenvolvedor Python, Automação, IA aplicada, SaaS">
+    <meta name="author" content="David Xavier Brito">
+    <title>David Xavier Brito - Backend Python Developer</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-900 text-gray-100">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold gradient-text">David Xavier Brito</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#sobre" class="hover:text-[#00FFC6] transition-colors">Sobre</a>
+                    <a href="#competencias" class="hover:text-[#00FFC6] transition-colors">Competências</a>
+                    <a href="#formacoes" class="hover:text-[#00FFC6] transition-colors">Formações</a>
+                    <a href="#projetos" class="hover:text-[#00FFC6] transition-colors">Projetos</a>
+                    <a href="#contato" class="hover:text-[#00FFC6] transition-colors">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Sobre Mim -->
+    <section id="sobre" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center gap-12 fade-in-up">
+                <!-- Foto de Perfil -->
+                <div class="flex-shrink-0 w-full md:w-80">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#00FFC6] to-[#00cc9e] rounded-full blur-2xl opacity-30 animate-pulse"></div>
+                        <img src="images/profile.jpeg" alt="David Xavier Brito - Backend Python Developer" 
+                             class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#00FFC6] shadow-2xl mx-auto hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+                
+                <!-- Texto -->
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        <span class="gradient-text">David Xavier Brito</span>
+                        <br>
+                        <span class="text-white text-3xl md:text-5xl mt-4 block">Backend Python Developer</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+                        Desenvolvedor Backend Python com mais de <strong class="text-[#00FFC6]">10 anos de experiência</strong> em engenharia de software, 
+                        especializado em <strong class="text-[#00FFC6]">Flask, FastAPI, SQLAlchemy, Docker e AWS</strong>.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-400 leading-relaxed mb-10">
+                        Atua no desenvolvimento de sistemas escaláveis, automações inteligentes e integrações com IA (LangChain, RAG). 
+                        Focado em criar soluções seguras, performáticas e de alto impacto.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#projetos" class="px-8 py-3 bg-[#00FFC6] text-slate-900 font-semibold rounded-lg hover:bg-[#00cc9e] transition-all glow card-hover">
+                            Ver Projetos
+                        </a>
+                        <a href="#contato" class="px-8 py-3 border-2 border-[#00FFC6] text-[#00FFC6] font-semibold rounded-lg hover:bg-[#00FFC6] hover:text-slate-900 transition-all card-hover">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competências Section -->
+    <section id="competencias" class="py-20 px-6 bg-slate-800/50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Competências</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Linguagens e Frameworks -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="code" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Linguagens & Frameworks</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Python 3.8+
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Flask & Flask-SocketIO
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            FastAPI
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Django
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            SQLAlchemy & ORM
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Kivy & KivyMD
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Infraestrutura e DevOps -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="server" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Infraestrutura & DevOps</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Docker & Containers
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            AWS (S3, EC2, RDS)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Nginx & Reverse Proxy
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Git & Version Control
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            CI/CD Pipelines
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Paramiko (SSH)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="database" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Banco de Dados</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            PostgreSQL
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            MySQL
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            SQLite
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Redis (Cache/Queue)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Vector DB (Pinecone)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IA & Machine Learning -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="brain" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">IA & Machine Learning</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            LangChain
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            RAG (Retrieval-Augmented)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Pinecone (Vector DB)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            OpenAI API Integration
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Embeddings & NLP
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- APIs e Comunicação -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="network" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">APIs & Comunicação</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            REST APIs
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            WebSocket & SocketIO
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            JWT Authentication
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            WhatsApp Cloud API
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Requests & aiohttp
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Automação e Web Scraping -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="bot" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Automação & Web Scraping</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Selenium WebDriver
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            BeautifulSoup
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Async/Await (asyncio)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Multi-threading
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Celery (Task Queue)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Blockchain e Criptografia -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="link" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Blockchain & Crypto</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Solana SDK
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Polygon Blockchain
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            IPFS (Storage)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Cryptography (PyNaCl)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Segurança e Compliance -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Segurança & Compliance</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            LGPD Compliance
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Security by Design
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Werkzeug (Security)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Hash & Encryption
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ferramentas e Bibliotecas -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="wrench" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                        <h3 class="text-xl font-semibold">Ferramentas & Bibliotecas</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Pytrends API
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Flask-Login & Auth
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            WTForms & Validation
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-[#00FFC6] rounded-full mr-3"></span>
+                            Tkinter (GUI)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formações Acadêmicas e Cursos Section -->
+    <section id="formacoes" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Formações Acadêmicas & Cursos</h2>
+            
+            <!-- Formação Acadêmica -->
+            <div class="mb-12">
+                <div class="flex items-center mb-8">
+                    <i data-lucide="graduation-cap" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                    <h3 class="text-3xl font-semibold">Formação Acadêmica</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Bacharelado em Direito -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-xl font-semibold text-white mb-2">Bacharelado em Direito</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">ULBRA</p>
+                            <p class="text-gray-400 text-sm mb-3">jan 2024 - jan 2027</p>
+                            <p class="text-gray-300 text-sm mb-3">Identifiquei uma crescente demanda por profissionais que combinem conhecimento técnico em TI com expertise jurídica.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Direito da Internet</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Direito Civil</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Direito Empresarial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pós-graduação Segurança da Informação -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-xl font-semibold text-white mb-2">Pós-graduação em Segurança da Informação</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">GRAN</p>
+                            <p class="text-gray-400 text-sm mb-3">jul 2025 - jul 2026</p>
+                            <p class="text-gray-300 text-sm mb-3">Cibersegurança, gestão de riscos, auditoria de sistemas e proteção de dados, com foco em LGPD.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Cibersegurança</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">LGPD</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Auditoria</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pós-graduação Direito Digital -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-xl font-semibold text-white mb-2">Pós-graduação em Direito Digital e Proteção de Dados</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">GRAN</p>
+                            <p class="text-gray-400 text-sm mb-3">jul 2025 - jul 2026</p>
+                            <p class="text-gray-300 text-sm mb-3">Estudo das relações entre Direito e Tecnologia, com foco em proteção de dados, privacidade e regulação digital.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">LGPD</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Proteção de Dados</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Crimes Cibernéticos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bacharelado Ciência da Computação -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-xl font-semibold text-white mb-2">Bacharelado em Ciência da Computação</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Universidade Federal do Tocantins (UFT)</p>
+                            <p class="text-gray-400 text-sm mb-3">2017 - 2022</p>
+                            <p class="text-gray-300 text-sm mb-3">Competências em algoritmos, estruturas de dados, inteligência artificial e desenvolvimento de software.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Java</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">SQL</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">POO</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">IA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bacharelado Sistemas de Informação -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-xl font-semibold text-white mb-2">Bacharelado em Sistemas de Informação</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">ULBRA</p>
+                            <p class="text-gray-400 text-sm mb-3">2016 - 2020</p>
+                            <p class="text-gray-300 text-sm mb-3">Alicerce em programação, análise de sistemas, gerenciamento de projetos e segurança da informação.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Banco de Dados</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Segurança</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Desenvolvimento Web</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Gerenciamento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cursos e Certificações -->
+            <div>
+                <div class="flex items-center mb-8">
+                    <i data-lucide="award" class="w-8 h-8 text-[#00FFC6] mr-3"></i>
+                    <h3 class="text-3xl font-semibold">Cursos & Certificações</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Busca Semântica com Bancos Vetoriais -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Busca Semântica com Bancos Vetoriais</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy</p>
+                            <p class="text-gray-400 text-xs mb-3">out 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Domine LLMs com LangChain -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Domine LLMs com LangChain</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy</p>
+                            <p class="text-gray-400 text-xs mb-3">out 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Selenium WebDriver -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Testes Funcionais com Selenium WebDriver</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Selenium</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">WebDriver</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">AJAX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AWS Solutions Architect -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">AWS Solutions Architect Associate SAA-C03</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">EC2</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">S3</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">VPC</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Lambda</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Django Web Framework -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Django Web Framework e DRF</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Django</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">DRF</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Docker -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Docker para Desenvolvedores</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Docker</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Git e GitHub -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Git e GitHub do Básico ao Avançado</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Git</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Banco de Dados e SQL -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Banco de Dados e SQL</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">MySQL</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">PostgreSQL</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python e Django Essencial -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Programação Web com Python e Django</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Django</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python 3 Completo -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Python 3 - Curso Completo</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Python</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">POO</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Banco de Dados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REST APIs com Flask -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">REST APIs com Python e Flask</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy Brasil</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Flask</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">REST API</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Studio Code -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Visual Studio Code: Produtividade</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Udemy</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript B7Web -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Introdução ao Javascript</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">B7Web</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2022</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">JavaScript</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">AJAX</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">POO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bancos de Dados B7Web -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Bancos de Dados</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">B7Web</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2021</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">MySQL</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">MariaDB</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HTML5 e CSS3 -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">HTML5 e CSS3</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">B7Web</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2021</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">HTML5</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pentest Mobile -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Pentest Mobile</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Desec Security</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2021</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Docker</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Burp Suite</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Engenharia Reversa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Criptografia -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Criptografia 0x65</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Desec Security</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2020</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Criptografia</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">OpenSSL</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">HTTPS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Docker B7Web -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Docker</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">B7Web</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2020</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Docker</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Containers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PHP-ZP -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">PHP-ZP</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">B7Web</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2017</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">PHP</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">JavaScript</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pentest Profissional -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="border-l-4 border-[#00FFC6] pl-4">
+                            <h4 class="text-lg font-semibold text-white mb-2">Pentest Profissional</h4>
+                            <p class="text-[#00FFC6] text-sm mb-1">Desec Security</p>
+                            <p class="text-gray-400 text-xs mb-3">jan 2017</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Python</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Linux</span>
+                                <span class="px-2 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded text-xs">Bash</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Projetos em Destaque</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- BOT-SCAN - Bot Sniper Solana -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="target" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Bot Sniper Solana</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Bot de análise de tokens em tempo real na rede Solana com monitoramento de mempool, análise automática de liquidez e simulação de trades.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">WebSocket</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Blockchain</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Multi-threading</span>
+                    </div>
+                    <button onclick="openModal('modal-bot-scan')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- FINTECH - Sistema Fintech -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="credit-card" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Sistema Fintech</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema completo de autenticação e gerenciamento de usuários com Flask, incluindo controle de acesso, sessões e estrutura modular.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Flask</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">SQLAlchemy</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Flask-Login</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">SQLite</span>
+                    </div>
+                    <button onclick="openModal('modal-fintech')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Sistema 2.0 - WebSocket Real-time -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="zap" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Sistema Real-time</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema Flask com comunicação em tempo real via WebSocket (SocketIO), permitindo atualizações instantâneas e interatividade.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Flask</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">SocketIO</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">WebSocket</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">SQLAlchemy</span>
+                    </div>
+                    <button onclick="openModal('modal-realtime')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- HENRY SANTOS - Sistema de Vendas -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="shopping-cart" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Sistema de Vendas</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema completo de gerenciamento de vendas com interface gráfica, permitindo alteração de vendedores por venda com validações.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Tkinter</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">SQLite</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">CRUD</span>
+                    </div>
+                    <button onclick="openModal('modal-vendas')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- GOOGLE TRENDS - Análise de Tendências -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="trending-up" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Análise Google Trends</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema de análise de tendências do Google Trends com comparação de palavras-chave, processamento de dados e geração de relatórios.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Pytrends API</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Análise de Dados</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">API Integration</span>
+                    </div>
+                    <button onclick="openModal('modal-google-trends')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- LogChain Legal Evidence -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">LogChain Legal Evidence</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Plataforma de provas digitais com blockchain, garantindo integridade e rastreabilidade de evidências jurídicas através de tecnologia IPFS.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Flask</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Blockchain</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">IPFS</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">LGPD</span>
+                    </div>
+                    <button onclick="openModal('modal-logchain')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- FitQuest -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="dumbbell" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">FitQuest</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema gamificado de treinos e nutrição com IA generativa, criando planos personalizados e motivando usuários através de gamificação.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">IA Generativa</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Gamificação</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Docker</span>
+                    </div>
+                    <button onclick="openModal('modal-fitquest')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- SyncFit TV -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="tv" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">SyncFit TV</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Gerenciador de mídia para academias com comunicação em tempo real via WebSocket, permitindo transmissão de conteúdo dinâmico.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Flask</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">WebSocket</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Redis</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">AWS S3</span>
+                    </div>
+                    <button onclick="openModal('modal-syncfit')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- BeautyBrain Calendar -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="calendar" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">BeautyBrain Calendar</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Assistente de agendamento inteligente com IA e integração WhatsApp Cloud API, automatizando reservas e lembretes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">LangChain</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">WhatsApp API</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">RAG</span>
+                    </div>
+                    <button onclick="openModal('modal-beautybrain')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- EvidenChain SaaS -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">EvidenChain SaaS</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema SaaS de certificação de evidências digitais com Polygon Blockchain, garantindo autenticidade e conformidade legal para empresas.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Polygon Blockchain</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">LGPD</span>
+                    </div>
+                    <button onclick="openModal('modal-evidenchain')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Sistema LLM com LangChain -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="brain-circuit" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Sistema LLM com LangChain</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema de processamento de linguagem natural com LangChain, implementando RAG (Retrieval-Augmented Generation) para respostas inteligentes e contextualizadas.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">LangChain</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">RAG</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">OpenAI API</span>
+                    </div>
+                    <button onclick="openModal('modal-llm')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Sistema Pinecone - Vector Database -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="database" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Projeto Pinecone</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema de busca semântica e vetorização com Pinecone, permitindo busca inteligente por similaridade e recomendações baseadas em embeddings.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Pinecone</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Vector DB</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Embeddings</span>
+                    </div>
+                    <button onclick="openModal('modal-pinecone')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Sistema Externo Cliente -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="users" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Sistema Externo Cliente</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Plataforma externa para gerenciamento de clientes com API RESTful, autenticação segura e integração com sistemas terceiros.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Flask</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">REST API</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">JWT</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">PostgreSQL</span>
+                    </div>
+                    <button onclick="openModal('modal-cliente')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Sistema de Agendamento Avançado -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="calendar-check" class="w-6 h-6 text-[#00FFC6] mr-2"></i>
+                        <h3 class="text-2xl font-semibold">Sistema de Agendamento</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Plataforma completa de agendamento com notificações automáticas, integração de calendários e gerenciamento de recursos e horários.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Celery</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">Redis</span>
+                        <span class="px-3 py-1 bg-[#00FFC6]/20 text-[#00FFC6] rounded-full text-sm">PostgreSQL</span>
+                    </div>
+                    <button onclick="openModal('modal-agendamento')" class="text-[#00FFC6] hover:underline flex items-center cursor-pointer">
+                        Ver Detalhes do Projeto <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 px-6 bg-slate-800/50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Contato</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Email -->
+                <a href="mailto:david151@rede.ulbra.br" class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover flex items-center group">
+                    <div class="w-12 h-12 bg-[#00FFC6]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#00FFC6] transition-colors">
+                        <i data-lucide="mail" class="w-6 h-6 text-[#00FFC6] group-hover:text-slate-900"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Email</h3>
+                        <p class="text-gray-400 text-sm">david151@rede.ulbra.br</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/david-xavier-brito" target="_blank" rel="noopener noreferrer" class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover flex items-center group">
+                    <div class="w-12 h-12 bg-[#00FFC6]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#00FFC6] transition-colors">
+                        <i data-lucide="linkedin" class="w-6 h-6 text-[#00FFC6] group-hover:text-slate-900"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">LinkedIn</h3>
+                        <p class="text-gray-400 text-sm">Perfil Profissional</p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+5563992431834" target="_blank" rel="noopener noreferrer" class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover flex items-center group">
+                    <div class="w-12 h-12 bg-[#00FFC6]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#00FFC6] transition-colors">
+                        <i data-lucide="message-circle" class="w-6 h-6 text-[#00FFC6] group-hover:text-slate-900"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">WhatsApp</h3>
+                        <p class="text-gray-400 text-sm">+55 63 99243-1834</p>
+                    </div>
+                </a>
+
+                <!-- YouTube -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-slate-800 p-6 rounded-xl border border-slate-700 card-hover flex items-center group">
+                    <div class="w-12 h-12 bg-[#00FFC6]/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-[#00FFC6] transition-colors">
+                        <i data-lucide="youtube" class="w-6 h-6 text-[#00FFC6] group-hover:text-slate-900"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">YouTube</h3>
+                        <p class="text-gray-400 text-sm">Canal em breve</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800">
+        <div class="container mx-auto max-w-4xl text-center">
+            <p class="text-gray-400">
+                © 2025 David Xavier Brito. Desenvolvedor Backend Python especializado em Flask, FastAPI e IA.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal Bot Sniper Solana -->
+    <div id="modal-bot-scan" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Bot Sniper Solana</h2>
+                <span class="close" onclick="closeModal('modal-bot-scan')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Bot inteligente desenvolvido para monitorar e analisar tokens em tempo real na rede blockchain Solana. 
+                        O sistema funciona como um assistente automatizado que identifica oportunidades de trading através de 
+                        análise técnica avançada e monitoramento contínuo do mempool.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Monitoramento em Tempo Real:</strong> Conecta-se via WebSocket ao mempool da Solana para capturar transações instantaneamente, permitindo identificar novos tokens no momento exato em que são criados.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Análise Automática de Tokens:</strong> Avalia cada token encontrado verificando liquidez, supply total, número de holders, detecção de honeypot e histórico de transações para classificar o risco.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Simulação de Trades:</strong> Calcula lucros e perdas potenciais antes de qualquer execução real, permitindo avaliar oportunidades sem risco financeiro.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Processamento Paralelo:</strong> Utiliza multi-threading para analisar múltiplos tokens simultaneamente, garantindo velocidade e eficiência.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O bot opera em três etapas principais:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Captura:</strong> Monitora continuamente o mempool via WebSocket, identificando novas transações de criação de tokens.</li>
+                        <li><strong>Análise:</strong> Para cada token detectado, executa verificações automáticas de segurança e viabilidade econômica.</li>
+                        <li><strong>Relatório:</strong> Gera estatísticas detalhadas e simula cenários de trading para apoiar decisões estratégicas.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ideal para traders e analistas de criptomoedas que precisam identificar oportunidades rapidamente, 
+                        reduzir riscos através de análise automatizada e tomar decisões baseadas em dados precisos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sistema Fintech -->
+    <div id="modal-fintech" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Sistema Fintech</h2>
+                <span class="close" onclick="closeModal('modal-fintech')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma completa de gerenciamento financeiro desenvolvida com Flask, focada em segurança, 
+                        controle de acesso e arquitetura modular. O sistema oferece uma base sólida para aplicações 
+                        fintech que exigem autenticação robusta e gerenciamento de usuários.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Sistema de Autenticação:</strong> Implementa login seguro com hash de senhas, sessões controladas e proteção contra ataques comuns.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Controle de Acesso:</strong> Diferencia níveis de permissão (admin e usuários comuns), permitindo controle granular sobre funcionalidades.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Gerenciamento de Usuários:</strong> CRUD completo para cadastro, edição e remoção de usuários com validações de segurança.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Arquitetura Modular:</strong> Separação clara de responsabilidades (routes, models, controllers) facilitando manutenção e escalabilidade.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema utiliza uma arquitetura em camadas:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Camada de Apresentação:</strong> Interfaces web responsivas para login e gerenciamento.</li>
+                        <li><strong>Camada de Controle:</strong> Rotas Flask que processam requisições e gerenciam autenticação.</li>
+                        <li><strong>Camada de Dados:</strong> SQLAlchemy ORM para interação com banco de dados SQLite.</li>
+                        <li><strong>Camada de Segurança:</strong> Flask-Login para gerenciamento de sessões e proteção de rotas.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perfeito como base para sistemas bancários, plataformas de investimento, fintechs startups 
+                        ou qualquer aplicação que necessite de controle de acesso robusto e gerenciamento de usuários seguro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sistema Real-time -->
+    <div id="modal-realtime" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Sistema Real-time</h2>
+                <span class="close" onclick="closeModal('modal-realtime')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma web desenvolvida com Flask e SocketIO que permite comunicação bidirecional em tempo real 
+                        entre servidor e clientes. O sistema elimina a necessidade de polling constante, oferecendo atualizações 
+                        instantâneas e interatividade aprimorada.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Comunicação WebSocket:</strong> Conexão persistente que permite envio e recebimento de dados instantaneamente, sem delay de requisições HTTP.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Atualizações em Tempo Real:</strong> Notificações push automáticas quando dados são alterados no servidor, mantendo todos os clientes sincronizados.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Chat e Mensagens:</strong> Sistema de mensagens em tempo real para comunicação entre usuários conectados.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Gerenciamento de Sessões:</strong> Controle de múltiplas conexões simultâneas com identificação de usuários conectados.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema utiliza SocketIO, que combina WebSocket com fallbacks automáticos:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Conexão:</strong> Cliente estabelece conexão WebSocket com o servidor Flask-SocketIO.</li>
+                        <li><strong>Eventos:</strong> Servidor e cliente trocam eventos personalizados (mensagens, atualizações, notificações).</li>
+                        <li><strong>Broadcast:</strong> Servidor pode enviar mensagens para todos os clientes ou grupos específicos.</li>
+                        <li><strong>Sincronização:</strong> Mudanças no banco de dados disparam eventos que atualizam todos os clientes conectados.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ideal para dashboards ao vivo, sistemas de monitoramento, aplicativos de chat, plataformas colaborativas, 
+                        sistemas de notificações e qualquer aplicação que necessite de atualizações instantâneas sem recarregar a página.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sistema de Vendas -->
+    <div id="modal-vendas" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Sistema de Vendas</h2>
+                <span class="close" onclick="closeModal('modal-vendas')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Sistema desktop completo para gerenciamento de vendas desenvolvido com Python e interface gráfica Tkinter. 
+                        A plataforma permite controle total sobre vendas, vendedores e relacionamento entre eles, com interface 
+                        intuitiva e validações de segurança.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Gerenciamento de Vendas:</strong> Cadastro completo de vendas com informações de cliente, produto, valor, data e status.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Alteração de Vendedores:</strong> Permite reatribuir vendas entre vendedores, mantendo histórico completo e auditável.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Interface Gráfica:</strong> Aplicação desktop com interface amigável, facilitando uso por equipes de vendas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Validações:</strong> Sistema robusto de validação de dados e confirmações antes de alterações críticas.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema opera através de uma interface desktop:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Cadastro:</strong> Usuário insere dados da venda através de formulários na interface.</li>
+                        <li><strong>Armazenamento:</strong> Dados são persistidos em banco SQLite com relacionamentos entre vendas e vendedores.</li>
+                        <li><strong>Alteração:</strong> Sistema permite buscar vendas por ID e alterar vendedor associado com validações.</li>
+                        <li><strong>Consulta:</strong> Visualização de todas as vendas com informações detalhadas e filtros.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perfeito para lojas físicas, equipes de vendas, gestão de comissões, controle de vendas por vendedor 
+                        e qualquer negócio que precise gerenciar vendas e atribuições de vendedores de forma organizada e auditável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Google Trends -->
+    <div id="modal-google-trends" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Análise Google Trends</h2>
+                <span class="close" onclick="closeModal('modal-google-trends')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Sistema automatizado de análise de tendências de busca do Google que processa grandes volumes de palavras-chave, 
+                        compara interesse entre termos e gera relatórios estratégicos para apoiar decisões de marketing e SEO.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Análise de Palavras-chave:</strong> Processa listas extensas de termos, extrai dados de interesse do Google Trends e compara performance entre palavras-chave.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Comparação Inteligente:</strong> Calcula médias de interesse e identifica termos com maior potencial de busca, priorizando oportunidades.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Processamento em Lote:</strong> Analisa múltiplas palavras-chave automaticamente, economizando tempo e recursos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Geração de Relatórios:</strong> Exporta resultados em formatos estruturados para análise posterior e tomada de decisão.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema integra-se com a API do Google Trends:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Entrada:</strong> Recebe lista de palavras-chave de arquivos de texto ou entrada manual.</li>
+                        <li><strong>Consulta:</strong> Para cada termo, consulta o Google Trends via API Pytrends para obter dados de interesse.</li>
+                        <li><strong>Processamento:</strong> Calcula médias, compara valores e identifica termos com maior potencial.</li>
+                        <li><strong>Saída:</strong> Gera relatórios e salva resultados processados para análise estratégica.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ideal para equipes de marketing digital, profissionais de SEO, pesquisadores de mercado, estrategistas de conteúdo 
+                        e qualquer pessoa que precise identificar tendências de busca e otimizar estratégias baseadas em dados reais de interesse.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal LogChain Legal Evidence -->
+    <div id="modal-logchain" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">LogChain Legal Evidence</h2>
+                <span class="close" onclick="closeModal('modal-logchain')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma inovadora de certificação e rastreabilidade de evidências digitais jurídicas utilizando tecnologia blockchain. 
+                        O sistema garante integridade, imutabilidade e autenticidade de documentos legais através de registro distribuído e armazenamento IPFS.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Certificação Blockchain:</strong> Registra hash de documentos na blockchain, criando prova criptográfica de existência e autenticidade em um momento específico.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Armazenamento IPFS:</strong> Utiliza InterPlanetary File System para armazenamento descentralizado e permanente de documentos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Rastreabilidade Completa:</strong> Mantém histórico completo de todas as alterações e acessos, garantindo auditabilidade total.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Conformidade LGPD:</strong> Implementa controles de privacidade e segurança de dados conforme legislação brasileira.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema opera em três etapas principais:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Upload:</strong> Documento é enviado para a plataforma e armazenado no IPFS, gerando um hash único.</li>
+                        <li><strong>Registro:</strong> Hash e metadados são registrados na blockchain, criando prova imutável de autenticidade.</li>
+                        <li><strong>Verificação:</strong> Qualquer pessoa pode verificar a integridade do documento comparando hash atual com o registrado na blockchain.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Essencial para escritórios de advocacia, tribunais digitais, sistemas de notarização eletrônica, compliance jurídico, 
+                        gestão de contratos e qualquer aplicação que necessite de prova irrefutável de autenticidade e integridade de documentos digitais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal FitQuest -->
+    <div id="modal-fitquest" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">FitQuest</h2>
+                <span class="close" onclick="closeModal('modal-fitquest')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma gamificada de saúde e bem-estar que combina treinos personalizados, nutrição inteligente e motivação através de 
+                        gamificação. O sistema utiliza IA generativa para criar planos de exercícios e dietas totalmente personalizados baseados no 
+                        perfil único de cada usuário.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>IA Generativa:</strong> Gera planos de treino e nutrição personalizados usando modelos de linguagem, adaptando-se às preferências e objetivos do usuário.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Gamificação:</strong> Sistema de pontos, conquistas, níveis e rankings que transforma a jornada de fitness em uma experiência envolvente e motivadora.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Planejamento Inteligente:</strong> Cria rotinas de exercícios progressivas e receitas nutricionais balanceadas, considerando restrições e objetivos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Acompanhamento:</strong> Registro de progresso, métricas de desempenho e ajustes automáticos dos planos baseados em resultados.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema personaliza a experiência do usuário:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Cadastro:</strong> Usuário fornece informações sobre objetivos, restrições, preferências e histórico.</li>
+                        <li><strong>Geração:</strong> IA analisa o perfil e gera planos personalizados de treino e nutrição usando modelos generativos.</li>
+                        <li><strong>Gamificação:</strong> Cada atividade completa gera pontos e conquistas, mantendo o usuário engajado.</li>
+                        <li><strong>Evolução:</strong> Sistema ajusta planos automaticamente conforme o progresso e feedback do usuário.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perfeito para academias digitais, aplicativos de fitness, plataformas de nutrição, programas de bem-estar corporativo 
+                        e qualquer negócio que queira oferecer uma experiência personalizada e motivadora de saúde e fitness aos seus usuários.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SyncFit TV -->
+    <div id="modal-syncfit" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">SyncFit TV</h2>
+                <span class="close" onclick="closeModal('modal-syncfit')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Sistema de gerenciamento de mídia para academias que permite transmissão de conteúdo dinâmico em múltiplas telas simultaneamente. 
+                        A plataforma utiliza WebSocket para comunicação em tempo real, garantindo sincronização perfeita entre dispositivos e atualizações instantâneas.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Transmissão em Tempo Real:</strong> Envia conteúdo (vídeos, imagens, textos) para múltiplas TVs simultaneamente via WebSocket.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Gerenciamento Centralizado:</strong> Interface administrativa para controlar conteúdo exibido em todas as telas da academia.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Armazenamento em Nuvem:</strong> Integração com AWS S3 para armazenamento escalável de mídias e conteúdo.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Sincronização:</strong> Redis garante sincronização de estado entre múltiplos servidores e clientes conectados.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema gerencia transmissão de mídia:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Upload:</strong> Administrador faz upload de conteúdo (vídeos, imagens) que é armazenado no AWS S3.</li>
+                        <li><strong>Programação:</strong> Define quais conteúdos serão exibidos e em quais horários através da interface web.</li>
+                        <li><strong>Transmissão:</strong> Servidor Flask envia comandos via WebSocket para todas as TVs conectadas em tempo real.</li>
+                        <li><strong>Sincronização:</strong> Redis mantém estado sincronizado entre todos os dispositivos, garantindo experiência consistente.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ideal para academias, centros esportivos, lojas, eventos corporativos, salas de espera e qualquer ambiente que necessite 
+                        de gerenciamento centralizado de conteúdo visual em múltiplas telas com atualizações em tempo real.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal BeautyBrain Calendar -->
+    <div id="modal-beautybrain" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">BeautyBrain Calendar</h2>
+                <span class="close" onclick="closeModal('modal-beautybrain')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Assistente inteligente de agendamento desenvolvido para salões de beleza, clínicas estéticas e estabelecimentos de serviços. 
+                        O sistema utiliza inteligência artificial (LangChain e RAG) para processar mensagens do WhatsApp e automatizar completamente 
+                        o processo de reservas, cancelamentos e confirmações.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Chatbot Inteligente:</strong> Processa mensagens de WhatsApp usando LangChain e RAG para entender contexto e intenções dos clientes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Agendamento Automático:</strong> Conversa naturalmente com clientes via WhatsApp para agendar, reagendar ou cancelar horários.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Lembretes Automáticos:</strong> Envia notificações automáticas antes dos agendamentos para reduzir faltas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Integração WhatsApp Cloud API:</strong> Conecta-se diretamente com a API oficial do WhatsApp para comunicação empresarial.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema processa conversas naturalmente:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Recebimento:</strong> Cliente envia mensagem no WhatsApp solicitando agendamento ou consultando horários.</li>
+                        <li><strong>Processamento:</strong> IA analisa a mensagem usando LangChain e RAG para entender intenção e extrair informações relevantes.</li>
+                        <li><strong>Consulta:</strong> Sistema verifica disponibilidade no calendário e sugere horários apropriados.</li>
+                        <li><strong>Confirmação:</strong> Bot confirma agendamento via WhatsApp e agenda automaticamente no sistema.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perfeito para salões de beleza, clínicas estéticas, consultórios médicos, spas, estúdios de tatuagem e qualquer negócio 
+                        que realize agendamentos e queira automatizar o atendimento via WhatsApp, reduzindo trabalho manual e melhorando experiência do cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal EvidenChain SaaS -->
+    <div id="modal-evidenchain" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">EvidenChain SaaS</h2>
+                <span class="close" onclick="closeModal('modal-evidenchain')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma SaaS completa de certificação de evidências digitais utilizando Polygon Blockchain. O sistema oferece 
+                        serviço de assinatura para empresas que precisam garantir autenticidade e conformidade legal de documentos digitais, 
+                        com arquitetura escalável e compliance LGPD.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Certificação em Blockchain:</strong> Registra documentos na Polygon Blockchain, garantindo prova criptográfica de autenticidade.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Modelo SaaS:</strong> Arquitetura multi-tenant que permite múltiplas empresas usarem o serviço de forma isolada e segura.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Compliance LGPD:</strong> Implementa controles de privacidade, criptografia e gestão de consentimento conforme legislação brasileira.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Escalabilidade:</strong> Infraestrutura em AWS com Docker para escalar conforme demanda e garantir alta disponibilidade.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema opera como serviço em nuvem:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Cadastro:</strong> Empresa se registra na plataforma e configura seu ambiente isolado (tenant).</li>
+                        <li><strong>Upload:</strong> Documentos são enviados, processados e hash criptográfico é gerado.</li>
+                        <li><strong>Blockchain:</strong> Hash é registrado na Polygon Blockchain, criando prova imutável de autenticidade.</li>
+                        <li><strong>Gestão:</strong> Interface web permite gerenciar documentos, verificar autenticidade e gerar certificados.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ideal para empresas que precisam certificar documentos, contratos, certificados, diplomas, comprovantes, relatórios 
+                        e qualquer tipo de evidência digital que necessite de prova de autenticidade e conformidade legal em modelo SaaS escalável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sistema LLM com LangChain -->
+    <div id="modal-llm" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Sistema LLM com LangChain</h2>
+                <span class="close" onclick="closeModal('modal-llm')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma avançada de processamento de linguagem natural que utiliza LangChain para criar sistemas de IA conversacional 
+                        inteligentes. O sistema implementa RAG (Retrieval-Augmented Generation) para fornecer respostas precisas e contextualizadas 
+                        baseadas em conhecimento específico da empresa ou domínio.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>RAG (Retrieval-Augmented Generation):</strong> Combina busca em base de conhecimento com geração de texto, permitindo respostas precisas baseadas em documentos específicos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Processamento de Documentos:</strong> Extrai e indexa informações de PDFs, textos e documentos para criar base de conhecimento pesquisável.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Conversação Contextual:</strong> Mantém histórico de conversa para fornecer respostas coerentes e contextualizadas ao longo da interação.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Integração com LLMs:</strong> Conecta-se com modelos de linguagem (OpenAI, etc.) para gerar respostas naturais e inteligentes.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema utiliza arquitetura RAG:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Indexação:</strong> Documentos são processados e convertidos em embeddings, armazenados em base vetorial.</li>
+                        <li><strong>Consulta:</strong> Quando usuário faz pergunta, sistema busca documentos mais relevantes na base de conhecimento.</li>
+                        <li><strong>Contexto:</strong> Documentos encontrados são enviados como contexto para o modelo de linguagem (LLM).</li>
+                        <li><strong>Geração:</strong> LLM gera resposta baseada no contexto fornecido, garantindo precisão e relevância.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perfeito para assistentes virtuais empresariais, chatbots inteligentes, sistemas de suporte ao cliente, análise de documentos, 
+                        Q&A automatizado e qualquer aplicação que necessite de respostas inteligentes baseadas em conhecimento específico da organização.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projeto Pinecone -->
+    <div id="modal-pinecone" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Projeto Pinecone</h2>
+                <span class="close" onclick="closeModal('modal-pinecone')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Sistema de busca semântica e vetorização utilizando Pinecone como banco de dados vetorial. A plataforma permite 
+                        realizar buscas inteligentes por similaridade, encontrar conteúdo relacionado e implementar sistemas de recomendação 
+                        baseados em embeddings e aprendizado de máquina.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Vetorização:</strong> Converte textos, imagens e dados em vetores numéricos (embeddings) que capturam significado semântico.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Busca por Similaridade:</strong> Encontra conteúdo relacionado através de cálculo de distância entre vetores, não apenas palavras-chave exatas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Recomendações Inteligentes:</strong> Sistema de recomendação que sugere conteúdo similar baseado em preferências e histórico.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Escalabilidade:</strong> Pinecone oferece infraestrutura gerenciada para milhões de vetores com performance otimizada.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema utiliza busca vetorial:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Indexação:</strong> Conteúdo é convertido em embeddings usando modelos de ML e armazenado no Pinecone.</li>
+                        <li><strong>Consulta:</strong> Quando usuário busca, query também é convertida em embedding.</li>
+                        <li><strong>Comparação:</strong> Sistema calcula similaridade entre vetor da query e todos os vetores armazenados.</li>
+                        <li><strong>Resultados:</strong> Retorna itens mais similares ordenados por relevância semântica.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ideal para sistemas de busca semântica, motores de recomendação, aplicações de e-commerce, plataformas de conteúdo, 
+                        sistemas de matching inteligente e qualquer aplicação que precise encontrar similaridades e relacionamentos complexos em dados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sistema Externo Cliente -->
+    <div id="modal-cliente" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Sistema Externo Cliente</h2>
+                <span class="close" onclick="closeModal('modal-cliente')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        API RESTful completa desenvolvida para gerenciamento de clientes externos, permitindo integração com sistemas terceiros 
+                        e aplicações mobile/web. O sistema oferece autenticação segura via JWT e endpoints documentados para operações CRUD completas.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>API RESTful:</strong> Endpoints padronizados para criar, ler, atualizar e deletar recursos de clientes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Autenticação JWT:</strong> Sistema de tokens seguros que permite acesso controlado sem armazenar sessões no servidor.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Integração Externa:</strong> Permite que sistemas terceiros (apps mobile, outras plataformas) consumam dados de forma padronizada.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Validação e Segurança:</strong> Validação de dados, sanitização de inputs e proteção contra ataques comuns (SQL injection, XSS).</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema segue padrão REST:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Autenticação:</strong> Cliente externo faz login e recebe token JWT válido por tempo determinado.</li>
+                        <li><strong>Acesso:</strong> Token é enviado em cada requisição no header Authorization para validação.</li>
+                        <li><strong>Operações:</strong> Sistema processa requisições HTTP (GET, POST, PUT, DELETE) para gerenciar recursos.</li>
+                        <li><strong>Resposta:</strong> Retorna dados em formato JSON padronizado com códigos HTTP apropriados.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Essencial para integrações B2B, aplicativos mobile, plataformas de parceiros, sistemas de terceiros que precisam acessar dados, 
+                        microserviços e arquiteturas distribuídas que necessitam de comunicação padronizada e segura entre sistemas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sistema de Agendamento -->
+    <div id="modal-agendamento" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-3xl font-bold gradient-text">Sistema de Agendamento</h2>
+                <span class="close" onclick="closeModal('modal-agendamento')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">📋 Sobre o Projeto</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Plataforma completa de gerenciamento de agendamentos com notificações automáticas, integração de calendários e 
+                        gerenciamento inteligente de recursos e horários. O sistema utiliza Celery para processamento assíncrono de tarefas 
+                        e Redis para cache e gerenciamento de filas.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🎯 Funcionalidades Principais</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Agendamento Inteligente:</strong> Sistema detecta conflitos, sugere horários alternativos e gerencia disponibilidade de recursos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Notificações Automáticas:</strong> Envia lembretes por email/SMS antes dos agendamentos usando Celery para processamento assíncrono.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Integração de Calendários:</strong> Sincroniza com Google Calendar, Outlook e outros para manter agenda unificada.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#00FFC6] mr-2">•</span>
+                            <span><strong>Gerenciamento de Recursos:</strong> Controla disponibilidade de salas, equipamentos, profissionais e outros recursos necessários para agendamentos.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">🔧 Como Funciona</h3>
+                    <p class="text-gray-300 leading-relaxed mb-3">
+                        O sistema gerencia o ciclo completo de agendamento:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                        <li><strong>Solicitação:</strong> Cliente solicita agendamento através da interface web ou API.</li>
+                        <li><strong>Validação:</strong> Sistema verifica disponibilidade de recursos e horários, detectando conflitos.</li>
+                        <li><strong>Confirmação:</strong> Agendamento é criado e notificações são agendadas via Celery para envio futuro.</li>
+                        <li><strong>Lembretes:</strong> Tarefas assíncronas enviam lembretes automaticamente antes do horário agendado.</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-[#00FFC6] mb-3">💼 Aplicações</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perfeito para clínicas médicas, salões de beleza, consultórios, academias, serviços de manutenção, reuniões corporativas, 
+                        reservas de espaços e qualquer negócio que precise gerenciar agendamentos de forma profissional e automatizada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
