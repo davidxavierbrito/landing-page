@@ -29,8 +29,8 @@ function applyLang(lang) {
     const isEn = lang === 'en';
     document.documentElement.lang = isEn ? 'en' : 'pt-BR';
     document.title = isEn
-        ? 'David Xavier Brito — Python Backend Engineer'
-        : 'David Xavier Brito — Engenheiro Backend Python';
+        ? 'David Xavier Brito | Python Backend Engineer'
+        : 'David Xavier Brito | Engenheiro Backend Python';
     document.querySelectorAll('[data-set-lang]').forEach(btn => {
         btn.setAttribute('aria-pressed', String(btn.dataset.setLang === (isEn ? 'en' : 'pt')));
     });
