@@ -68,74 +68,23 @@ html {
     box-shadow: 0 0 30px rgba(0, 255, 198, 0.5);
 }
 
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
+/* Language switch: show only the content of the active language */
+html[lang="en"] body [lang="pt"],
+html:not([lang="en"]) body [lang="en"] {
+    display: none !important;
 }
 
-.modal.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.lang-btn {
+    color: #9ca3af;
+    transition: all 0.2s;
 }
 
-.modal-content {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    margin: auto;
-    padding: 0;
-    border: 2px solid #00FFC6;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 900px;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 20px 60px rgba(0, 255, 198, 0.3);
-    animation: modalSlideIn 0.3s ease-out;
-}
-
-@keyframes modalSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.modal-header {
-    background: rgba(0, 255, 198, 0.1);
-    padding: 2rem;
-    border-bottom: 2px solid #00FFC6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal-body {
-    padding: 2rem;
-}
-
-.close {
+.lang-btn:hover {
     color: #00FFC6;
-    font-size: 32px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
 }
 
-.close:hover {
-    color: #00cc9e;
-    transform: rotate(90deg);
+.lang-btn[aria-pressed="true"] {
+    background: #00FFC6;
+    color: #0f172a;
+    font-weight: 600;
 }
-
